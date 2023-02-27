@@ -1,0 +1,166 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+:root {
+ font-size: 62.5%;
+}
+
+button {
+ border: none;
+ background-color: transparent;
+ cursor: pointer;
+ transition: transform 1000ms;
+}
+
+footer button:hover {
+ transform: scale(1.1) ;
+}
+
+.hide {
+ display: none;
+}
+
+.Hide-bg {
+ background: #121214;
+}
+
+.Hide-cl  path {
+    fill: #fff;
+}
+
+.Hide-cl span {
+    color: #fff;   
+}
+
+.Hide-fill svg path:nth-child(1) {
+fill:#29292E ;
+}
+
+.Hide-fill svg path:nth-child(2) {
+fill: #C4C4CC;;
+}
+
+footer button:hover svg path:nth-child(1) {
+  fill:#02799D ;   
+}
+
+footer button:hover svg path:nth-child(2) {
+    fill: #fff;    
+  }
+
+body {
+ background: #fff;
+ height: 100vh;
+ width: 100%;  
+ margin: 0 auto;   
+}
+
+.page {
+ font-family: 'Roboto', sans-serif;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ width: clamp(128rem, 80rem + 80vh, 300rem);  
+ margin: 0 auto;  
+ 
+}
+
+.page .bg  {
+    position: absolute;
+    right: 6rem;
+    top: 6rem;
+}
+
+main {
+ text-align: center;
+ padding-right: 19rem;
+}
+
+.timer {
+ justify-content: center;
+ display: flex;   
+ font-weight: 500;
+ font-size: 12.7rem;
+ line-height: 14.8rem;
+
+ text-align: center;
+ text-transform: uppercase;
+
+ color: #323238;
+}
+
+.controlers button {
+ margin: 2rem;
+}
+
+footer {
+ display: grid;
+ grid-template-areas: "A" "B";
+ grid-template-columns: 17rem 17rem;
+}
+
+footer button {
+ margin: 1.6rem;
+}
+
+@media (max-width: 1480px) {
+
+    body {
+        position: relative;
+        justify-content: center;
+    }
+    .page {
+        position: relative;
+    }
+    
+}
+
+@media (max-width: 30rem) {
+    .page {
+        display: grid;
+        justify-items: center;
+        width: clamp(100rem, 100rem + 10vh, 100rem);
+        height: clamp(100rem, 150rem + 5vh, 200rem);
+        align-content: center; 
+    }
+
+    main {
+        padding: 0;
+        padding-bottom: 20vh;
+    }
+}
+
+@media (max-height: 21rem) {
+    .page {
+        width: clamp(100rem, 100rem + 10vh, 100rem);
+        height: clamp(80rem, 90rem + 5vh, 200rem);
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-height: 17rem) {
+    .page {
+        width: clamp(100rem, 100rem + 10vh, 100rem);
+        height: clamp(60rem, 70rem + 5vh, 200rem);
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+}
