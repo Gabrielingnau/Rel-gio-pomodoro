@@ -1,4 +1,4 @@
-# SPA Universe
+# Relógio pomodoro
 
 A ideia é criar um relógio do tipo pomodoro.
 
